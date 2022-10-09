@@ -1,0 +1,48 @@
+package StepDefinitions;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import PageObject.registerPage;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class testSteps extends baseClass {
+	
+	@Given("^Launch browser$")
+	public void launch_browser() throws Throwable {
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//driver/chromedriver.exe");
+	    WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+	    rp = new registerPage(driver);
+	    driver.manage().window().maximize();
+	}
+
+	@And("^Open url \"([^\"]*)\"$")
+	public void open_url(String url) throws Throwable {
+	    driver.get(url);
+	}
+
+	@And("^Enter the required information field$")
+	public void enter_the_required_information_field() throws Throwable {
+	    
+	}
+
+	@When("^Click on Daftar button$")
+	public void click_on_Daftar_button() throws Throwable {
+	    
+	}
+
+	@Then("^We can see the verification page contains \"([^\"]*)\"$")
+	public void we_can_see_the_verification_page_contains(String arg1) throws Throwable {
+	    
+	}
+
+	@Then("^Close browser$")
+	public void close_browser() throws Throwable {
+	    
+	}
+
+}

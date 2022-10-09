@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRunner" project="cermati.com" tests="6" started="6" failures="0" errors="0" ignored="6">
+  <testsuite name="TestRunner.testRunner" time="0.004">
+    <testsuite name="Feature: Register" time="0.005">
+      <testsuite name="Scenario: Successfully register the new member" time="0.005" incomplete="true">
+        <skipped/>
+        <testcase name="Given Launch browser" classname="Scenario: Successfully register the new member" time="0.002" ignored="true"/>
+        <testcase name="And Open url &quot;https://www.cermati.com/app/gabung&quot;" classname="Scenario: Successfully register the new member" time="0.0" ignored="true"/>
+        <testcase name="And Enter the required information field" classname="Scenario: Successfully register the new member" time="0.001" ignored="true"/>
+        <testcase name="When Click on Daftar button" classname="Scenario: Successfully register the new member" time="0.0" ignored="true"/>
+        <testcase name="Then We can see the verification page contains &quot;Pilih Metode Verifikasi&quot;" classname="Scenario: Successfully register the new member" time="0.0" ignored="true"/>
+        <testcase name="And Close browser" classname="Scenario: Successfully register the new member" time="0.001" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
